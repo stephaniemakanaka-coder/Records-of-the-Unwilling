@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Price of Obedience</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="hud">
+
+    <div class="left-panel">
+      <h2>MISSION</h2>
+      <p>Reach extraction point</p>
+
+      <h2>STATUS</h2>
+      <div class="bar">
+        <label>Health</label>
+        <div class="fill health"></div>
+      </div>
+
+      <div class="bar">
+        <label>Stress</label>
+        <div class="fill stress"></div>
+      </div>
+    </div>
+
+    <div class="game-area">
+      <div id="player"></div>
+    </div>
+
+    <div class="right-panel">
+      <h2>ORDERS</h2>
+      <p>Hold position at the church.</p>
+
+      <button onclick="makeChoice('obey')">Obey</button>
+      <button onclick="makeChoice('refuse')">Refuse</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

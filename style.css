@@ -1,0 +1,75 @@
+body{
+  margin:0;
+  background:#111;
+  color:white;
+  font-family:Arial, sans-serif;
+  overflow:hidden;
+}
+
+.hud{
+  display:flex;
+  height:100vh;
+}
+
+.left-panel,
+.right-panel{
+  width:250px;
+  background:#1b1b1b;
+  padding:20px;
+  box-sizing:border-box;
+}
+
+.game-area{
+  flex:1;
+  position:relative;
+  background:
+    linear-gradient(rgba(0,0,0,0.4),
+    rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop');
+  background-size:cover;
+  overflow:hidden;
+}
+
+#player{
+  width:40px;
+  height:40px;
+  background:#8db600;
+  position:absolute;
+  top:300px;
+  left:300px;
+  border-radius:6px;
+}
+
+.bar{
+  margin:20px 0;
+}
+
+.fill{
+  height:20px;
+  background:green;
+  border-radius:5px;
+}
+
+.health{
+  width:80%;
+}
+
+.stress{
+  width:40%;
+  background:crimson;
+}
+
+button{
+  width:100%;
+  margin-top:10px;
+  padding:12px;
+  background:#333;
+  color:white;
+  border:none;
+  cursor:pointer;
+  font-size:16px;
+}
+
+button:hover{
+  background:#555;
+}
