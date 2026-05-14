@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Iron Front</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="game-ui">
+
+  <!-- LEFT PANEL -->
+  <div class="panel left-panel">
+
+    <h1 class="title">IRON FRONT</h1>
+    <p class="subtitle">DAY 07</p>
+
+    <div class="section">
+      <h2>MISSION OBJECTIVE</h2>
+
+      <div class="paper">
+        <p>Reach extraction point</p>
+        <p>Avoid enemy patrols</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>SQUAD STATUS</h2>
+
+      <div class="squad-card">
+        <div class="avatar"></div>
+
+        <div>
+          <h3>SGT. KIM</h3>
+          <p>Leader</p>
+        </div>
+      </div>
+
+      <div class="health-bar">
+        <div class="health-fill"></div>
+      </div>
+
+      <div class="squad-card">
+        <div class="avatar"></div>
+
+        <div>
+          <h3>PFC. LEE</h3>
+          <p>Scout</p>
+        </div>
+      </div>
+
+      <div class="health-bar">
+        <div class="health-fill yellow"></div>
+      </div>
+
+    </div>
+
+    <div class="section">
+      <h2>SOLDIER STATUS</h2>
+
+      <p>Health</p>
+      <div class="health-bar">
+        <div class="health-fill"></div>
+      </div>
+
+      <p>Stress</p>
+      <div class="health-bar">
+        <div class="stress-fill"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- GAME AREA -->
+  <div class="game-screen">
+
+    <div class="top-bar">
+      OPERATION : IRON FRONT
+    </div>
+
+    <div id="player"></div>
+
+    <div class="enemy"></div>
+
+    <div class="weapon-box">
+      <p>M4A1</p>
+      <h2>30 / 120</h2>
+    </div>
+
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="panel right-panel">
+
+    <div class="profile">
+      <div class="big-avatar"></div>
+
+      <div>
+        <h2>PFC. ALEX</h2>
+        <p>DAY 07</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>TACTICAL MAP</h2>
+
+      <div class="map-box">
+        <div class="map-marker"></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>CURRENT ORDERS</h2>
+
+      <div class="paper">
+        <p>Hold position at the church.</p>
+
+        <button onclick="obeyOrder()">
+          OBEY
+        </button>
+
+        <button onclick="refuseOrder()">
+          REFUSE
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
